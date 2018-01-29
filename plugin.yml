@@ -1,56 +1,56 @@
-name: RealMute
+name: VoidMute
 main: RealMute\Main
 version: 4.0.0
 api: [3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
 load: POSTWORLD
-author: Leo3418
+author: VMPE Development Team
 description: A chat management plugin with many extra features.
 website: Not showing.
 
 commands:
- realmute:
+ voidmute:
   aliases: 
     - rmt
-  description: "RealMute options"
-  usage: "/realmute help|<options>"
-  permission: realmute.option
- rmute:
+  description: "VoidMute options"
+  usage: "/voidmute help|<options>"
+  permission: voidmute.option
+ voidmute:
   description: "Mute a player"
-  usage: "/rmute <player> [time in minutes]"
-  permission: realmute.mute
+  usage: "/voidmute <player> [time in minutes]"
+  permission: voidmute.mute
  runmute:
   description: "Unmute a player"
-  usage: "/runmute <player>"
-  permission: realmute.unmute
+  usage: "/voidunmute <player>"
+  permission: voidmute.unmute
  muteall:
   description: "Mute all players"
   usage: "/muteall"
-  permission: realmute.muteall
+  permission: voidmute.muteall
  unmuteall:
   description: "Unmute all players"
   usage: "/unmuteall"
-  permission: realmute.unmuteall
+  permission: voidmute.unmuteall
   
 permissions:
- realmute:
-  description: "Allows all RealMute commands"
+ voidmute:
+  description: "Allows all VoidMute commands"
   default: op
   children:
-   realmute.muteignored:
+   voidmute.muteignored:
     description: "Allows sending messages when all players are muted"
     default: op
-   realmute.option:
-    description: "Allows changing RealMute options"
+   voidmute.option:
+    description: "Allows changing VoidMute options"
     default: op
-   realmute.mute:
+   voidmute.mute:
     description: "Allows muting individual players"
     default: op
-   realmute.unmute:
+   voidmute.unmute:
     description: "Allows unmuting individual players"
     default: op
-   realmute.muteall:
+   voidmute.muteall:
     description: "Allows muting all players"
     default: op
-   realmute.unmuteall:
+   voidmute.unmuteall:
     description: "Allows unmuting individual players"
     default: op
