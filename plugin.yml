@@ -10,7 +10,7 @@ website: Not showing.
 commands:
  voidmute:
   aliases: 
-    - rmt
+    - vmt
   description: "VoidMute options"
   usage: "/voidmute help|<options>"
   permission: voidmute.option
