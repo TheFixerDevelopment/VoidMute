@@ -120,7 +120,7 @@ class Main extends PluginBase implements Listener{
 	}
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
 		switch($command->getName()){
-			case "realmute":
+			case "voidmute":
 				if(count($args) != 1 && count($args) != 2){
 					$sender->sendMessage("§5Please use: §3".$command->getUsage());
 					return true;
