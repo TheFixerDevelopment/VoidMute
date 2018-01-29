@@ -31,7 +31,7 @@ class CheckTime extends PluginTask{
 	public function getPlugin(){
 		return $this->plugin;
 	}
-	public function onRun($tick){
+	public function onRun(int $tick){
 		$list = explode(",",$this->getPlugin()->getConfig()->get("mutedplayers"));
 		array_pop($list);
 		foreach($list as $player){
