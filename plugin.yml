@@ -1,7 +1,7 @@
 name: VoidMute
 main: RealMute\Main
-version: 4.0.0
-api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
+version: 4.0.1
+api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
 load: POSTWORLD
 author: VMPE Development Team
 description: A chat management plugin with many extra features.
@@ -14,13 +14,13 @@ commands:
   description: "VoidMute options"
   usage: "/voidmute help|<options>"
   permission: voidmute.option
- voidmute:
+ vmute:
   description: "Mute a player"
-  usage: "/voidmute <player> [time in minutes]"
+  usage: "/vmute <player> [time in minutes]"
   permission: voidmute.mute
- runmute:
+ vunmute:
   description: "Unmute a player"
-  usage: "/voidunmute <player>"
+  usage: "/vunmute <player>"
   permission: voidmute.unmute
  muteall:
   description: "Mute all players"
