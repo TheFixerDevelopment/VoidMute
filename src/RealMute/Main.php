@@ -468,7 +468,7 @@ class Main extends PluginBase implements Listener{
 					$sender->sendMessage("§aPlease use: §b".$command->getUsage());
 					return true;
 				}
-			case "rmute":
+			case "vmute":
 				if(count($args) != 1 && count($args) != 2){
 					$sender->sendMessage("§aPlease use: §b".$command->getUsage());
 					return true;
@@ -496,7 +496,7 @@ class Main extends PluginBase implements Listener{
 					$sender->sendMessage(TextFormat::RED."§3".$name." §2has been already muted.");
 					return true;
 				}
-			case "runmute":
+			case "vunmute":
 				if(count($args) != 1){
 					$sender->sendMessage("§aPlease use: §b".$command->getUsage());
 					return true;
